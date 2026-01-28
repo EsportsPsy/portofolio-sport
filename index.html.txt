@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniele Stizza | Sports Psychologist</title>
+  <meta name="description" content="Daniele Stizza — Sports Psychologist & Mental Performance Coach. Evidence-based mental performance support for athletes, coaches, and clubs." />
+
+  <!-- Optional: Google Font (safe on GitHub Pages) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      /* SPORT THEME */
+      --bg0:#060B16;
+      --bg1:#071427;
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.08);
+      --text:#EAF0FF;
+      --muted: rgba(234,240,255,.72);
+
+      --accent:#2EE59D;     /* sport green */
+      --accent2:#3AA9FF;    /* support blue */
+      --line: rgba(255,255,255,.10);
+
+      --radius: 18px;
+      --shadow: 0 18px 55px rgba(0,0,0,.45);
+      --max: 1060px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 900px at 18% 0%, rgba(46,229,157,.18), transparent 60%),
+        radial-gradient(1100px 800px at 82% 18%, rgba(58,169,255,.16), transparent 55%),
+        linear-gradient(180deg, var(--bg0), var(--bg1));
+      overflow-x:hidden;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:44px 18px 60px}
+
+    /* HEADER / HERO */
+    .hero{
+      position:relative;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border-radius: calc(var(--radius) + 8px);
+      box-shadow: var(--shadow);
+      padding: 34px 26px;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background:
+        radial-gradient(800px 320px at 20% 20%, rgba(46,229,157,.18), transparent 60%),
+        radial-gradient(700px 300px at 80% 40%, rgba(58,169,255,.14), transparent 55%);
+      pointer-events:none;
+      filter: blur(0px);
+      opacity: .9;
+    }
+    .hero > *{position:relative}
+
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding:10px 12px;
+      border-radius: 999px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.18);
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .2px;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;
+      background: var(--accent);
+      box-shadow: 0 0 14px rgba(46,229,157,.55);
+    }
+
+    h1{
+      margin: 16px 0 10px;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.08;
+      letter-spacing: -0.8px;
+    }
+    .subtitle{
+      margin:0;
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.55;
+      max-width: 78ch;
+    }
+    .badges{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+    .badge{
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.18);
+      padding:10px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .badge strong{
+      color: var(--text);
+      font-weight:600;
+    }
+
+    .cta{
+      margin-top:22px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.22);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform .12s ease, border-color .12s ease, background .12s ease;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.18); background: rgba(0,0,0,.30)}
+    .btn.primary{
+      border-color: rgba(46,229,157,.38);
+      background: linear-gradient(180deg, rgba(46,229,157,.18), rgba(46,229,157,.10));
+    }
+    .btn.primary:hover{border-color: rgba(46,229,157,.58)}
+    .btn.secondary{
+      border-color: rgba(58,169,255,.36);
+      background: linear-gradient(180deg, rgba(58,169,255,.16), rgba(58,169,255,.09));
+    }
+
+    /* SECTIONS */
+    .grid{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:16px;
+    }
+    @media (max-width: 860px){
+      .grid{grid-template-columns: 1fr;}
+    }
+
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.20);
+    }
+    .card h2{
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: .2px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .card h2 .pill{
+      width:10px;height:10px;border-radius:999px;
+      background: var(--accent2);
+      box-shadow: 0 0 16px rgba(58,169,255,.45);
+      opacity:.95;
+    }
+    .card p{margin: 0; color: var(--muted); line-height: 1.6; font-size: 14px}
+    ul.clean{
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+      display:grid;
+      gap:10px;
+    }
+    .li{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.18);
+      border-radius: 14px;
+      padding: 12px 12px;
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+    }
+    .li .mark{
+      width:10px;height:10px;border-radius:999px;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(46,229,157,.45);
+      margin-top: 6px;
+      flex: 0 0 auto;
+    }
+    .li strong{display:block; font-size: 14px}
+    .li span{display:block; font-size: 13px; color: var(--muted); margin-top:2px; line-height: 1.45}
+
+    .section{
+      margin-top: 16px;
+    }
+    .section-title{
+      margin: 26px 0 10px;
+      font-size: 14px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: rgba(234,240,255,.75);
+    }
+
+    /* TIMELINE */
+    .timeline{
+      display:grid;
+      gap:12px;
+    }
+    .role{
+      border:1px solid rgba(255,255,255,.10);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(0,0,0,.18));
+      border-radius: var(--radius);
+      padding: 14px 14px;
+    }
+    .roleTop{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .role h3{
+      margin:0;
+      font-size: 15px;
+      letter-spacing: .1px;
+    }
+    .meta{
+      color: var(--muted);
+      font-size: 13px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .tag{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      color: rgba(234,240,255,.78);
+    }
+    .bullets{
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .bullets li{margin: 6px 0}
+
+    /* FOOTER */
+    footer{
+      margin-top: 20px;
+      text-align:center;
+      color: rgba(234,240,255,.55);
+      font-size: 12px;
+    }
+    .links{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top: 10px;
+    }
+    .link{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      color: rgba(234,240,255,.85);
+    }
+    .link:hover{border-color: rgba(255,255,255,.18); background: rgba(0,0,0,.28)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <section class="hero">
+      <div class="kicker"><span class="dot"></span> Sports Psychology • Mental Performance • Evidence-Based</div>
+      <h1>Daniele Stizza</h1>
+      <p class="subtitle">
+        Sports Psychologist & Mental Performance Coach supporting athletes, coaches, and clubs with structured mental training,
+        pressure management, focus protocols, and performance consistency in competitive environments.
+      </p>
+
+      <div class="badges">
+        <div class="badge"><strong>Focus</strong> & Attention Control</div>
+        <div class="badge"><strong>Pressure</strong> Management</div>
+        <div class="badge"><strong>Emotional</strong> Regulation</div>
+        <div class="badge"><strong>Team</strong> Dynamics & Communication</div>
+        <div class="badge"><strong>Biofeedback</strong> & Self-Regulation</div>
+      </div>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:stizzadaniele@gmail.com">Email</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/daniele-stizza/?locale=en_US" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <div class="grid">
+
+      <section class="card">
+        <h2><span class="pill"></span> What I do</h2>
+        <p>
+          I design practical, measurable mental performance programs tailored to the sport context (individual athletes and teams),
+          combining applied sport psychology with structured routines and evidence-based tools.
+        </p>
+
+        <ul class="clean" aria-label="Services list">
+          <li class="li"><span class="mark"></span><div><strong>Mental Preparation</strong><span>Pre-competition routines, goal setting, performance plans, confidence building.</span></div></li>
+          <li class="li"><span class="mark"></span><div><strong>Focus & Concentration</strong><span>Attention control, cue words, refocus strategies, error recovery.</span></div></li>
+          <li class="li"><span class="mark"></span><div><strong>Pressure Management</strong><span>Stress responses, performance anxiety, clutch moments, decision-making under load.</span></div></li>
+          <li class="li"><span class="mark"></span><div><strong>Emotional Awareness</strong><span>Emotional literacy, regulation strategies, coping plans, resilience training.</span></div></li>
+          <li class="li"><span class="mark"></span><div><strong>Team & Communication</strong><span>Group dynamics, feedback culture, cohesion, leadership and role clarity.</span></div></li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h2><span class="pill"></span> Approach</h2>
+        <p>
+          Evidence-based applied sport psychology with practical delivery: individual sessions, staff workshops, on-field/remote interventions,
+          and integrated support for the performance environment.
+        </p>
+
+        <div class="section">
+          <div class="section-title">Methods & Tools</div>
+          <ul class="clean">
+            <li class="li"><span class="mark"></span><div><strong>Mental Skills Training</strong><span>Visualization, routines, self-talk, attentional control.</span></div></li>
+            <li class="li"><span class="mark"></span><div><strong>Stress & Recovery</strong><span>Self-regulation protocols, recovery habits, performance consistency.</span></div></li>
+            <li class="li"><span class="mark"></span><div><strong>Bio & Neurofeedback</strong><span>Training for awareness and regulation of psychophysiological states.</span></div></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+
+    <section class="section">
+      <div class="section-title">Sports Experience</div>
+
+      <div class="timeline">
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist | Totti Soccer School</h3>
+            <div class="meta">
+              <span class="tag">Apr 2021 – Present</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Psychological support and mental skills development in youth football context.</li>
+            <li>Building a performance environment: communication, emotional development, and growth culture.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist | Ostia Antica (Rome)</h3>
+            <div class="meta">
+              <span class="tag">2023 – Present</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Ongoing psychological and mental performance support within a sport context.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist / Mental Coach | FIBS – Italian Baseball Softball Federation</h3>
+            <div class="meta">
+              <span class="tag">Nov 2017 – Aug 2025</span>
+              <span class="tag">Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Training and support for coaches on psychological, pedagogical, relational and performance topics.</li>
+            <li>Applied communication, group dynamics, and athlete development across youth and technical pathways.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist | Circolo Canottieri Roma (Tennis)</h3>
+            <div class="meta">
+              <span class="tag">Sep 2020 – Sep 2024</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Responsible for the tennis mental area (with colleagues), within a structured awareness and development project.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist | FIGC Lazio – Federal Territorial Centers</h3>
+            <div class="meta">
+              <span class="tag">Sep 2018 – Sep 2023</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Support to clubs on psychology applied to football: communication, conflict management, group dynamics.</li>
+            <li>Workshops and guidance for coaches within youth development contexts.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist | Calcio Integrato & Roma Cares</h3>
+            <div class="meta">
+              <span class="tag">Jun 2018 – Oct 2023</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Promoting well-being and inclusion through football in contexts involving intellectual disabilities.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Sports Psychologist | Tiber Basket (Boot Camp)</h3>
+            <div class="meta">
+              <span class="tag">Jul 2020</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+          <ul class="bullets">
+            <li>Mental preparation boot camp: team cohesion and emotion management activities.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Education & Certifications</div>
+
+      <div class="timeline">
+        <div class="role">
+          <div class="roleTop">
+            <h3>Level II Certification in Bio and Neurofeedback | BFE European Biofeedback Federation</h3>
+            <div class="meta">
+              <span class="tag">21/09/2019 – Current</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>1st Degree Mental Trainer for Tennis | Istituto Superiore di Formazione Roberto Lombardi</h3>
+            <div class="meta">
+              <span class="tag">12/10/2018 – Current</span>
+              <span class="tag">Rome, Italy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Master’s Degree (DM 270/04) in Cognitive Neurosciences and Psychological Rehabilitation | Università di Roma La Sapienza</h3>
+            <div class="meta">
+              <span class="tag">01/11/2012 – 02/03/2016</span>
+              <span class="tag">Rome, Italy</span>
+              <span class="tag">EQF 7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Master in Sports Psychology | Human Factor Consulting (HFC)</h3>
+            <div class="meta">
+              <span class="tag">08/11/2014 – 14/11/2015</span>
+              <span class="tag">Rome, Italy</span>
+              <span class="tag">EQF 7</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Erasmus Programme | Universiteit Gent</h3>
+            <div class="meta">
+              <span class="tag">15/09/2012 – 15/02/2013</span>
+              <span class="tag">Ghent, Belgium</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="roleTop">
+            <h3>Degree in Psychological Sciences and Techniques (Cognitive Processes) | Università di Roma La Sapienza</h3>
+            <div class="meta">
+              <span class="tag">01/09/2005 – 01/10/2011</span>
+              <span class="tag">Rome, Italy</span>
+              <span class="tag">EQF 6</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="section-title">Contact</div>
+      <div class="links">
+        <a class="link" href="mailto:stizzadaniele@gmail.com">stizzadaniele@gmail.com</a>
+        <a class="link" href="https://www.linkedin.com/in/daniele-stizza/?locale=en_US" target="_blank" rel="noopener">LinkedIn Profile</a>
+      </div>
+      <p style="margin-top:12px;">© <span id="y"></span> Daniele Stizza — Sports Psychology & Mental Performance</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
