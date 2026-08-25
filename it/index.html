@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Daniele Stizza — Sports Psychologist & Mental Coach</title>
-  <meta name="description" content="Daniele Stizza — Sports Psychologist & Mental Coach. Evidence-based mental skills training for athletes, teams, coaches, and parents." />
+  <title>Daniele Stizza — Psicologo dello Sport & Mental Coach</title>
+  <meta name="description" content="Daniele Stizza — Psicologo dello Sport & Mental Coach. Preparazione mentale e supporto psicologico per atleti, squadre, tecnici e genitori." />
 
   <style>
     :root{
@@ -89,6 +89,24 @@
       color: var(--text);
       background: rgba(27,59,102,.35);
       text-decoration:none;
+    }
+
+    .lang-switch{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      padding:8px 10px;
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .lang-switch a{
+      padding:0;
+      color:var(--muted);
+    }
+    .lang-switch strong{
+      color:var(--text);
+      font-weight:800;
     }
 
     /* Hero */
@@ -363,50 +381,55 @@
         <div class="dot"></div>
         <div>
           <strong>Daniele Stizza</strong><br>
-          <span>Sports Psychologist · Mental Coach</span>
+          <span>Psicologo dello Sport · Mental Coach</span>
         </div>
       </div>
 
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#experience">Experience</a>
-        <a href="#methods">Methods</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="#about">Chi sono</a>
+        <a href="#services">Servizi</a>
+        <a href="#experience">Esperienze</a>
+        <a href="#methods">Metodo</a>
+        <a href="#education">Formazione</a>
+        <a href="#contact">Contatti</a>
+        <div class="lang-switch" aria-label="Selezione lingua">
+          <a href="../" aria-label="English version">EN</a>
+          <span>|</span>
+          <strong aria-current="page">IT</strong>
+        </div>
       </nav>
     </header>
 
     <section class="hero" id="top">
       <div class="card profile">
         <div class="photo">
-          <!-- IMPORTANT: upload a file named "profile.jpg" in the same folder as index.html -->
-          <img src="profile.jpg.jpg" alt="Daniele Stizza" />
+          <!-- La foto si trova nella cartella principale del repository -->
+          <img src="../profile.jpg.jpg" alt="Daniele Stizza" />
         </div>
 
-        <div class="quick" aria-label="Key areas">
-          <div class="chip"><b>Football</b> academies</div>
-          <div class="chip"><b>Tennis</b> programs</div>
-          <div class="chip"><b>Basket</b> academies</div>
-          <div class="chip"><b>Baseball/Softball</b> coaches</div>
-          <div class="chip"><b>Youth</b> development</div>
-          <div class="chip"><b>Team</b> communication</div>
-          <div class="chip"><b>Pressure</b> management</div>
+        <div class="quick" aria-label="Aree principali">
+          <div class="chip"><b>Calcio</b> e settori giovanili</div>
+          <div class="chip"><b>Tennis</b> e programmi mentali</div>
+          <div class="chip"><b>Basket</b> e settori giovanili</div>
+          <div class="chip"><b>Baseball/Softball</b> e tecnici</div>
+          <div class="chip"><b>Sviluppo</b> giovanile</div>
+          <div class="chip"><b>Comunicazione</b> di squadra</div>
+          <div class="chip"><b>Gestione</b> della pressione</div>
         </div>
       </div>
 
       <div class="card heroMain">
         <div>
           <div class="kicker">
-            Evidence-based support for athletes, coaches & parents
+            Supporto basato su evidenze per atleti, tecnici e genitori
             <div class="kline"></div>
           </div>
 
-          <h1>Sports Psychology<br><span style="color:var(--accent);">for performance & wellbeing</span></h1>
+          <h1>Psicologia dello Sport<br><span style="color:var(--accent);">per performance & benessere</span></h1>
 
           <p class="title">
-            I help athletes and sport environments improve performance and consistency through structured mental skills training:
-            emotional regulation, focus, confidence, pressure management, and team dynamics.
+            Aiuto atleti e contesti sportivi a migliorare performance e continuità attraverso percorsi strutturati di preparazione mentale:
+            regolazione emotiva, concentrazione, fiducia, gestione della pressione e dinamiche di squadra.
           </p>
 
           <div class="ctaRow">
@@ -415,7 +438,7 @@
                 <path d="M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M14 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              Get in touch
+              Contattami
             </a>
 
             <a class="btn" href="mailto:stizzadaniele@gmail.com">
@@ -426,7 +449,7 @@
               stizzadaniele@gmail.com
             </a>
 
-            <a class="btn" href="https://www.linkedin.com/in/daniele-stizza/?locale=en_US" target="_blank" rel="noopener">
+            <a class="btn" href="https://www.linkedin.com/in/daniele-stizza/" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                 <path d="M6.5 6.5v.2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
@@ -439,9 +462,9 @@
 
         <div style="border-top:1px solid rgba(27,59,102,.55); padding-top:14px;">
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
-            <span class="chip" style="border-color:rgba(45,212,191,.45);">Workshops & ongoing support</span>
-            <span class="chip" style="border-color:rgba(96,165,250,.45);">Individual & team interventions</span>
-            <span class="chip" style="border-color:rgba(249,115,22,.45);">Communication & cohesion</span>
+            <span class="chip" style="border-color:rgba(45,212,191,.45);">Workshop & supporto continuativo</span>
+            <span class="chip" style="border-color:rgba(96,165,250,.45);">Interventi individuali & di squadra</span>
+            <span class="chip" style="border-color:rgba(249,115,22,.45);">Comunicazione & coesione</span>
           </div>
         </div>
       </div>
@@ -449,55 +472,56 @@
 
     <section class="grid">
       <div class="card section" id="about">
-        <h2>About</h2>
+        <h2>Chi sono</h2>
 <p>
-  I’m a Sports Psychologist and Mental Performance Coach based in Rome, supporting athletes, coaches and performance environments with
-  evidence-based interventions that translate into daily training habits and competition readiness. My work focuses on performance
-  consistency: helping individuals stay composed under pressure, make better decisions when it matters, and recover effectively from
-  errors, setbacks and demanding competitive phases.
+  Sono Psicologo dello Sport e Mental Performance Coach con base a Roma. Lavoro con atleti, tecnici e contesti di performance
+  attraverso interventi basati su evidenze, traducendo il lavoro psicologico in abitudini concrete di allenamento e preparazione alla gara.
+  Il mio focus è la continuità della prestazione: aiutare le persone a mantenere lucidità sotto pressione, prendere decisioni efficaci nei
+  momenti importanti e recuperare rapidamente da errori, difficoltà e fasi competitive particolarmente impegnative.
   <br><br>
-  I design structured programs that integrate mental skills into the season plan—assessment, clear goals, practical routines and
-  regular checkpoints—so progress is measurable and sustainable. I work on attention control, confidence, emotional regulation,
-  stress–recovery balance and communication dynamics, aligning the people around the athlete to create a coherent performance culture.
-  The objective is simple: reliable execution, stronger adaptability, and a healthier environment that supports long-term development.
+  Progetto percorsi strutturati che integrano le abilità mentali nella programmazione della stagione — valutazione, obiettivi chiari,
+  routine pratiche e verifiche periodiche — affinché i progressi siano misurabili e sostenibili. Lavoro su controllo attentivo,
+  fiducia, regolazione emotiva, equilibrio tra stress e recupero e dinamiche comunicative, coinvolgendo le figure che ruotano attorno
+  all’atleta per costruire una cultura della performance coerente. L’obiettivo è favorire una prestazione più stabile, una maggiore
+  capacità di adattamento e un ambiente sano che sostenga lo sviluppo nel lungo periodo.
 </p>
       </div>
       <div class="card section" id="services">
-        <h2>Services</h2>
+        <h2>Servizi</h2>
         <ul class="list">
           <li class="li">
             <div class="badge">🎯</div>
             <div>
-              <b>Mental Preparation</b>
-              <span>Pre-performance routines, confidence building, goal setting, competitive readiness.</span>
+              <b>Preparazione mentale</b>
+              <span>Routine pre-prestazione, costruzione della fiducia, definizione degli obiettivi e preparazione alla competizione.</span>
             </div>
           </li>
           <li class="li">
             <div class="badge">🧠</div>
             <div>
               <b>Focus & Decision Making</b>
-              <span>Attentional control, refocusing strategies, performance cues, error recovery.</span>
+              <span>Controllo attentivo, strategie di refocusing, cue di prestazione e recupero dall’errore.</span>
             </div>
           </li>
           <li class="li">
             <div class="badge">⚡</div>
             <div>
-              <b>Pressure Management</b>
-              <span>Stress regulation, arousal control, coping plans for high-stakes moments.</span>
+              <b>Gestione della pressione</b>
+              <span>Regolazione dello stress, gestione dell’attivazione e strategie di coping per i momenti ad alta pressione.</span>
             </div>
           </li>
           <li class="li">
             <div class="badge">🤝</div>
             <div>
-              <b>Team Communication</b>
-              <span>Role clarity, feedback culture, cohesion, conflict management, staff alignment.</span>
+              <b>Comunicazione di squadra</b>
+              <span>Chiarezza dei ruoli, cultura del feedback, coesione, gestione dei conflitti e allineamento dello staff.</span>
             </div>
           </li>
           <li class="li">
             <div class="badge">👨‍👩‍👧‍👦</div>
             <div>
-              <b>Parents & Coaches Support</b>
-              <span>Educational meetings, practical tools, and shared language to support athlete development.</span>
+              <b>Supporto a genitori e tecnici</b>
+              <span>Incontri formativi, strumenti pratici e linguaggio condiviso per sostenere lo sviluppo dell’atleta.</span>
             </div>
           </li>
         </ul>
@@ -505,77 +529,70 @@
     </section>
 
     <section class="card section" id="experience" style="margin-top:22px;">
-      <h2>Selected Experience (Sports)</h2>
-      <p>Key roles and projects in football, tennis, baseball/softball and youth sport environments.</p>
+      <h2>Esperienze selezionate nello sport</h2>
+      <p>Principali esperienze e progetti in calcio, tennis, baseball/softball e sport giovanile.</p>
 
-      <div class="titem">
-  <div class="twhen">
-    2024 – Present
-  </div>
-  <div>
-    <div class="trole">Sport Psychologist / Mental Coach</div>
-    <div class="torg">Vesta Calcio</div>
-    <p>
-      Support to coaches and technical staff, with a focus on communication,
-      leadership, team management and the psychological aspects of training
-      and competition.
-    </p>
-  </div>
-</div>
-      <div class="timeline" aria-label="Experience timeline">
+      <div class="timeline" aria-label="Cronologia delle esperienze">
         <div class="titem">
-          <div class="twhen">2023 – Present<br><span style="color:var(--accent3)">Rome</span></div>
+          <div class="twhen">2024 – Presente<br><span style="color:var(--accent)">Roma</span></div>
           <div>
-            <div class="trole">Sport Psychologist</div>
-            <div class="torg">Ostia Antica (Rome) — ongoing sport psychology support.</div>
+            <div class="trole">Psicologo dello Sport / Mental Coach</div>
+            <div class="torg">Vesta Calcio — supporto a tecnici e staff, con focus su comunicazione, leadership, gestione del gruppo e aspetti psicologici dell’allenamento e della competizione.</div>
+          </div>
+        </div>
+        <div class="titem">
+          <div class="twhen">2023 – Presente<br><span style="color:var(--accent3)">Roma</span></div>
+          <div>
+            <div class="trole">Psicologo dello Sport</div>
+            <div class="torg">Ostia Antica (Roma) — supporto continuativo di psicologia dello sport.</div>
           </div>
         </div>
 
         <div class="titem">
-          <div class="twhen">2021 – Present<br><span style="color:var(--accent2)">Rome</span></div>
+          <div class="twhen">2021 – Presente<br><span style="color:var(--accent2)">Roma</span></div>
           <div>
-            <div class="trole">Sports Psychologist</div>
-            <div class="torg">Totti Soccer School — awareness, education, and performance-oriented interventions in football academy contexts.</div>
+            <div class="trole">Psicologo dello Sport</div>
+            <div class="torg">Totti Soccer School — interventi di sensibilizzazione, formazione e supporto alla performance nel contesto della scuola calcio.</div>
           </div>
         </div>
 
         <div class="titem">
-          <div class="twhen">2017 – 2025<br><span style="color:var(--accent)">Italy</span></div>
+          <div class="twhen">2017 – 2025<br><span style="color:var(--accent)">Italia</span></div>
           <div>
-            <div class="trole">Sports Psychologist / Mental Coach</div>
-            <div class="torg">FIBS (Italian Baseball Softball Federation) — training for technicians on psychological, pedagogical, relational and performance topics (communication, development, emotional/cognitive skills, group dynamics). </div>
+            <div class="trole">Psicologo dello Sport / Mental Coach</div>
+            <div class="torg">FIBS (Federazione Italiana Baseball Softball) — formazione dei tecnici su temi psicologici, pedagogici, relazionali e di performance (comunicazione, sviluppo, abilità emotive e cognitive, dinamiche di gruppo).</div>
           </div>
         </div>
 
         <div class="titem">
-          <div class="twhen">2020 – 2024<br><span style="color:var(--accent2)">Rome</span></div>
+          <div class="twhen">2020 – 2024<br><span style="color:var(--accent2)">Roma</span></div>
           <div>
-            <div class="trole">Sports Psychologist</div>
-            <div class="torg">Circolo Canottieri Roma — tennis mental area support and structured program development with colleagues.</div>
+            <div class="trole">Psicologo dello Sport</div>
+            <div class="torg">Circolo Canottieri Roma — supporto nell’area mentale del tennis e sviluppo di programmi strutturati in collaborazione con altri professionisti.</div>
           </div>
         </div>
 
         <div class="titem">
-          <div class="twhen">2018 – 2023<br><span style="color:var(--accent3)">Rome</span></div>
+          <div class="twhen">2018 – 2023<br><span style="color:var(--accent3)">Roma</span></div>
           <div>
-            <div class="trole">Sports Psychologist</div>
-            <div class="torg">F.I.G.C. (Lazio Youth School Sector) — support to clubs, coach education on communication, conflict management, and group dynamics.</div>
+            <div class="trole">Psicologo dello Sport</div>
+            <div class="torg">F.I.G.C. (Settore Giovanile e Scolastico Lazio) — supporto alle società e formazione dei tecnici su comunicazione, gestione dei conflitti e dinamiche di gruppo.</div>
           </div>
         </div>
 
         <div class="titem">
           <div class="twhen">2018 – 2023<br><span style="color:var(--accent)">Rome</span></div>
           <div>
-            <div class="trole">Sports Psychologist</div>
-            <div class="torg">Calcio Integrato & Roma Cares — wellbeing and inclusion through football for children and adults with intellectual disabilities.</div>
+            <div class="trole">Psicologo dello Sport</div>
+            <div class="torg">Calcio Integrato & Roma Cares — benessere e inclusione attraverso il calcio per bambini e adulti con disabilità intellettive.</div>
           </div>
         </div>
 
         <div class="titem">
-          <div class="twhen">Jul 2020<br><span style="color:var(--accent2)">Rome</span></div>
+          <div class="twhen">Lug 2020<br><span style="color:var(--accent2)">Roma</span></div>
           <div>
-            <div class="trole">Sports Psychologist</div>
-            <div class="torg">Tiber Basket — basketball mental preparation bootcamp (cohesion and emotional management).</div>
+            <div class="trole">Psicologo dello Sport</div>
+            <div class="torg">Tiber Basket — bootcamp di preparazione mentale nel basket, con focus su coesione e gestione emotiva.</div>
           </div>
         </div>
       </div>
@@ -583,100 +600,101 @@
 
     <section class="grid" style="margin-top:22px;">
       <div class="card section" id="methods">
-        <h2>Methods</h2>
+        <h2>Metodo</h2>
         <p>
- I work with evidence-based psychological approaches tailored to the sport context. My process combines cognitive-behavioral tools,
-  stress management strategies and structured mental skills training. I integrate visualization, attention-control protocols and
-  resilience-building methods, translating concepts into practical routines that can be used in training and competition.
+ Lavoro con approcci psicologici basati su evidenze e adattati al contesto sportivo. Il mio metodo integra strumenti
+  cognitivo-comportamentali, strategie di gestione dello stress e training strutturati sulle abilità mentali. Utilizzo visualizzazione,
+  protocolli di controllo attentivo e tecniche per sviluppare resilienza, traducendo i concetti psicologici in routine pratiche
+  utilizzabili in allenamento e in competizione.
           </p>
         <ul class="list" style="margin-top:12px;">
           <li class="li">
             <div class="badge">🧩</div>
             <div>
-              <b>Personalized planning</b>
-              <span>Assessment → goals → weekly routines → review cycles.</span>
+              <b>Pianificazione personalizzata</b>
+              <span>Valutazione → obiettivi → routine settimanali → cicli di revisione.</span>
             </div>
           </li>
           <li class="li">
             <div class="badge">📈</div>
             <div>
-              <b>Performance consistency</b>
-              <span>Tools to stabilize execution under pressure and reduce performance volatility.</span>
+              <b>Continuità della performance</b>
+              <span>Strumenti per rendere la prestazione più stabile sotto pressione e ridurne la variabilità.</span>
             </div>
           </li>
           <li class="li">
             <div class="badge">🗣️</div>
             <div>
-              <b>Environment optimization</b>
-              <span>Shared language between athlete–coach–parents to support development.</span>
+              <b>Ottimizzazione dell’ambiente</b>
+              <span>Un linguaggio condiviso tra atleta, tecnico e genitori per sostenere lo sviluppo.</span>
             </div>
           </li>
         </ul>
       </div>
 
       <div class="card section" id="education">
-        <h2>Education & Certifications</h2>
+        <h2>Formazione & Certificazioni</h2>
 
         <div class="timeline" style="margin-top:12px;">
           <div class="titem">
-            <div class="twhen">2019 – Current</div>
+            <div class="twhen">2019 – Presente</div>
             <div>
-              <div class="trole">Level II Certification in Bio & Neurofeedback</div>
+              <div class="trole">Certificazione di II livello in Bio & Neurofeedback</div>
               <div class="torg">BFE European Biofeedback Federation</div>
             </div>
           </div>
 
           <div class="titem">
-            <div class="twhen">2018 – Current</div>
+            <div class="twhen">2018 – Presente</div>
             <div>
-              <div class="trole">1st Degree Mental Trainer for Tennis</div>
-              <div class="torg">Istituto Superiore di Formazione Roberto Lombardi (Rome)</div>
+              <div class="trole">Preparatore Mentale Tennis di 1° livello</div>
+              <div class="torg">Istituto Superiore di Formazione Roberto Lombardi (Roma)</div>
             </div>
           </div>
 
           <div class="titem">
             <div class="twhen">2014 – 2015</div>
             <div>
-              <div class="trole">Master in Sports Psychology (EQF 7)</div>
-              <div class="torg">Studio Human Factor Consulting (HFC), Rome</div>
+              <div class="trole">Master in Psicologia dello Sport (EQF 7)</div>
+              <div class="torg">Studio Human Factor Consulting (HFC), Roma</div>
             </div>
           </div>
 
           <div class="titem">
             <div class="twhen">2012 – 2016</div>
             <div>
-              <div class="trole">Master’s Degree in Cognitive Neuroscience & Psychological Rehabilitation (EQF 7)</div>
-              <div class="torg">Sapienza University of Rome</div>
+              <div class="trole">Laurea Magistrale in Neuroscienze Cognitive e Riabilitazione Psicologica (EQF 7)</div>
+              <div class="torg">Sapienza Università di Roma</div>
             </div>
           </div>
 
           <div class="titem">
             <div class="twhen">2012 – 2013</div>
             <div>
-              <div class="trole">Erasmus Programme</div>
-              <div class="torg">Universiteit Gent, Belgium</div>
+              <div class="trole">Programma Erasmus</div>
+              <div class="torg">Universiteit Gent, Belgio</div>
             </div>
           </div>
 
           <div class="titem">
             <div class="twhen">2005 – 2011</div>
             <div>
-              <div class="trole">Degree in Psychological Sciences and Techniques (EQF 6)</div>
-              <div class="torg">Sapienza University of Rome</div>
+              <div class="trole">Laurea in Scienze e Tecniche Psicologiche (EQF 6)</div>
+              <div class="torg">Sapienza Università di Roma</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="card contact" id="contact" aria-label="Contact">
+    <footer class="card contact" id="contact" aria-label="Contatti">
       <div class="left">
-        <b>Let’s connect</b>
-        <span>Available for collaborations with clubs, academies, federations and sport programs.</span>
+        <b>Entriamo in contatto</b>
+        <span>Disponibile per collaborazioni con società sportive, academy, federazioni e programmi sportivi.</span>
       </div>
 
       <div class="links">
-        <a class="link" href="mailto:stizzadaniele@gmail.com" aria-label="Email Daniele">
+        <a class="link" href="mailto:stizzadaniele@gmail.com" aria-label="Invia un’email a Daniele">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="2" />
             <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -684,7 +702,7 @@
           Email
         </a>
 
-        <a class="link" href="https://www.linkedin.com/in/daniele-stizza/?locale=en_US" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+        <a class="link" href="https://www.linkedin.com/in/daniele-stizza/" target="_blank" rel="noopener" aria-label="Apri il profilo LinkedIn">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M6.5 9.5V18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             <path d="M6.5 6.5v.2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
@@ -693,7 +711,7 @@
           LinkedIn
         </a>
 
-        <a class="link" href="#top" aria-label="Back to top">
+        <a class="link" href="#top" aria-label="Torna in alto">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <path d="M12 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             <path d="M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
