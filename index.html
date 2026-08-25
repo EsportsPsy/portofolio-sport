@@ -90,33 +90,24 @@
       background: rgba(27,59,102,.35);
       text-decoration:none;
     }
-    .nav a:hover{
-  color: var(--text);
-  background: rgba(27,59,102,.35);
-  text-decoration:none;
-}
 
-.lang-switch{
-  display:flex;
-  align-items:center;
-  gap:6px;
-  padding:8px 10px;
-  font-size:12px;
-  color:var(--muted);
-  white-space:nowrap;
-}
-
-.lang-switch a{
-  padding:0;
-  color:var(--muted);
-}
-
-.lang-switch strong{
-  color:var(--text);
-  font-weight:800;
-}
-
-/* Hero */
+    .lang-switch{
+      display:flex;
+      align-items:center;
+      gap:6px;
+      padding:8px 10px;
+      font-size:12px;
+      color:var(--muted);
+      white-space:nowrap;
+    }
+    .lang-switch a{
+      padding:0;
+      color:var(--muted);
+    }
+    .lang-switch strong{
+      color:var(--text);
+      font-weight:800;
+    }
 
     /* Hero */
     .hero{
@@ -401,13 +392,18 @@
         <a href="#methods">Methods</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
+        <div class="lang-switch" aria-label="Language selection">
+          <strong aria-current="page">EN</strong>
+          <span>|</span>
+          <a href="it/" aria-label="Italian version">IT</a>
+        </div>
       </nav>
     </header>
 
     <section class="hero" id="top">
       <div class="card profile">
         <div class="photo">
-          <!-- IMPORTANT: upload a file named "profile.jpg" in the same folder as index.html -->
+          <!-- Profile photo stored in the repository root -->
           <img src="profile.jpg.jpg" alt="Daniele Stizza" />
         </div>
 
@@ -535,21 +531,14 @@
       <h2>Selected Experience (Sports)</h2>
       <p>Key roles and projects in football, tennis, baseball/softball and youth sport environments.</p>
 
-      <div class="titem">
-  <div class="twhen">
-    2024 – Present
-  </div>
-  <div>
-    <div class="trole">Sport Psychologist / Mental Coach</div>
-    <div class="torg">Vesta Calcio</div>
-    <p>
-      Support to coaches and technical staff, with a focus on communication,
-      leadership, team management and the psychological aspects of training
-      and competition.
-    </p>
-  </div>
-</div>
       <div class="timeline" aria-label="Experience timeline">
+        <div class="titem">
+          <div class="twhen">2024 – Present<br><span style="color:var(--accent)">Rome</span></div>
+          <div>
+            <div class="trole">Sport Psychologist / Mental Coach</div>
+            <div class="torg">Vesta Calcio — support to coaches and technical staff, with a focus on communication, leadership, team management and the psychological aspects of training and competition.</div>
+          </div>
+        </div>
         <div class="titem">
           <div class="twhen">2023 – Present<br><span style="color:var(--accent3)">Rome</span></div>
           <div>
